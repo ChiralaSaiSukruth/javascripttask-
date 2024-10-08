@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>COUNTER INCREMENT AND DECREMENT OPERATION</h1>
+<div class="container">
+    <p>Counter: <span id="Counter">0</span></p>
+    <button id="increment">Increment(+)</button>
+    <button id="decrement">Decrement(-)</button>
+<button id="reset">Reset</button>
+</div>
+<script>
+    let Counter = 0;
+document.getElementById("increment").addEventListener("click", function() {
+    Counter = Counter + 1;
+    document.getElementById("Counter").innerHTML = Counter;
+});
+
+document.getElementById("decrement").addEventListener("click", function() {
+    Counter = Counter - 1;
+    document.getElementById("Counter").innerHTML = Counter;
+});
+document.getElementById("reset").addEventListener("click", function() {
+    Counter = 0;
+    document.getElementById("Counter").innerHTML = Counter;
+});
+
+</script>
+</body>
+</html>
